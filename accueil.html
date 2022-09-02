@@ -3,83 +3,102 @@
     <head>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width" />
-                    <script src="https://kit.fontawesome.com/2642bb8ff5.js" crossorigin="anonymous"></script>
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+                    <script src="https://kit.fontawesome.com/22f99aaea7.js" crossorigin="anonymous"></script>                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
                     <link rel="stylesheet" href="./.css/accueil.css" />
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link rel="preconnect" href="https://fonts.googleapis.com">
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-                    <title>Ohmyfood</title>
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">                    <title>Ohmyfood</title>
     </head>
 
     <body>
         <header>
             <img id="logo" src="./images/logo/logo.png" alt="logo">
-                <nav>
-                    <form method="post" action="traitement.php">
-                      <div id="zone">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="search" name="ville" value="Paris,Belleville" id="recherche">
-                     </div> 
-                        <h3>Réservez le menu qui vous convient</h3>
-                        <h4>Découvrez des restaurants d'exceptions, séléctionnés par nos soins.</h4>
-                        <input type="submit" value="Explorer nos restaurants" class="boutton" >
-                    </form>
-                </nav>
         </header>
 
 
         <main>
+            <section id="accueil">
+                <nav>
+                    <form method="post" action="traitement.php">
+                      <div id="search">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="search" name="ville" value="Paris,Belleville" id="city">
+                     </div> 
+                        <h3>Réservez le menu qui vous convient</h3>
+                        <h4>Découvrez des restaurants d'exceptions, séléctionnés par nos soins.</h4>
+                        <input type="submit" value="Explorer nos restaurants" class="btn" >
+                    </form>
+                </nav>
+            </section>
+
+
             <section class="section_1">
                 <h3>Fonctionnement</h3>
                 <form>
-                    <i class="liste" class="fa-solid fa-mobile-screen-button"><input  value="Choississez un restaurant"></i>
-                    <i class="liste" class="fa-regular fa-list"><input  value="Composez votre menu"></i>
-                    <i class="liste" class="fa-solid fa-store"><input  value="Dégustez au restaurant"></i>
+                    <ol>
+                        <li><i class="fa-solid fa-mobile-screen-button"></i><input  value="Choississez un restaurant"></li>
+                        <li><i class="fa-solid fa-list-ul"></i><input  value="Composez votre menu"></li>
+                        <li><i class="fa-solid fa-store"></i><input  value="Dégustez au restaurant"></li>
+                    </ol>
                 </form>
             </section>
 
             <section class="section_2">
                 <h3> Restaurants</h3>
 
-                <a class="restau"  href="page_1.html" title="La palette du goût" target="_blank">
-                    <articles>
-                        <img src="./images/image1.jpg" alt="Restaurant La Palette du goût" >
-                        <h5> La Palette du goût</h5>
-                        <p>Ménilmontant</p>
-                        <i class="fa-thin fa-heart"></i>
-                    </articles>
-                </a>
+                <div class="restau">
+                    <a  href="page_1.html" title="La palette du goût" target="_blank">
+                        <articles>
+                            <img src="./images/image1.jpg" alt="Restaurant La Palette du goût" >
+                            <div class="adresse">
+                                <h4> La Palette du goût <i class="fill far fa-heart fa-2x"></i></h4>
+                                <p>Ménilmontant</p>
+                            </div>
+                            
+                        </articles>
+                    </a>
+               </div>
+
+               <div class="restau">
+                    <a  href="page_2.html" title="La note enchantée" target="_blank">
+                        <articles>
+                            <img src="./images/image2.jpg" alt="Restaurant La note enchantée" >
+                            <div class="adresse">  
+                                <h4 class="coeur"> La note enchantée <i class="fill far fa-heart fa-2x"></i></h4>
+                                <p>Charonne</p>
+                            </div>
+                        </articles>
+                    </a>
+                </div>
+
+                <div class="restau">
+                    <a href="page_3.html" title="A la française" target="_blank">
+                        <articles>
+                            <img src="./images/image3.jpg" alt="Restaurant A la française" >
+                            <div class="adresse">
+                                <h4> A la française <i class="fill far fa-heart fa-2x"></i></h4>
+                                <p>Cité Rouge</p>
+                            </div>
+                           
+                        </articles>
+                    </a>
+                </div>
 
 
-                <a class="restau" href="page_2.html" title="La note enchantée" target="_blank">
-                    <articles>
-                        <img src="./images/image2.jpg" alt="Restaurant La note enchantée" >
-                        <h5> La note enchantée</h5>
-                        <p>Charonne</p>
-                        <i class="fa-thin fa-heart"></i>
-                    </articles>
-                </a>
-
-                <a class="restau" href="page_3.html" title="A la française" target="_blank">
-                    <articles>
-                        <img src="./images/image3.jpg" alt="Restaurant A la française" >
-                        <h5> A la française</h5>
-                        <p>Cité Rouge</p>
-                        <i class="fa-thin fa-heart"></i>
-                    </articles>
-                </a>
-
-                <a  class="restau" href="page_4.html" title="Le délice des sens" target="_blank">
-                    <articles>
-                        <img src="./images/image4.jpg" alt="Restaurant Le délice des sens" >
-                        <h5> Le délice des sens</h5>
-                        <p>Folie-Méricourt</p>
-                        <i class="fa-thin fa-heart"></i>
-                    </articles>
-                </a>
+                <div class="restau">
+                    <a href="page_4.html" title="Le délice des sens" target="_blank">
+                        <articles>
+                            <img src="./images/image4.jpg" alt="Restaurant Le délice des sens" >
+                            <div class="adresse">
+                                <h4> Le délice des sens <i class="fill far fa-heart fa-2x"></i></h4>
+                                <p>Folie-Méricourt</p>
+                            </div>
+            
+                        </articles>
+                    </a>
+                </div>
             </section>
         </main>
     
