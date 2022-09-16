@@ -3,60 +3,68 @@
     <head>
                     <meta charset="utf-8" />
                     <meta name="viewport" content="width=device-width" />
-                    <script src="https://kit.fontawesome.com/22f99aaea7.js" crossorigin="anonymous"></script>                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+                    <script src="https://kit.fontawesome.com/22f99aaea7.js" crossorigin="anonymous"></script>                    
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
                     <link rel="stylesheet" href="./.css/accueil.css" />
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link rel="preconnect" href="https://fonts.googleapis.com">
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">                    <title>Ohmyfood</title>
+                    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">                    
+                    <title>Ohmyfood</title>
     </head>
 
     <body>
+        <div class="loader">
+            <span class="first    circle"><i class="fa-solid fa-circle"></i></span>
+            <span class="second   circle"><i class="fa-solid fa-circle"></i></span>
+            <span class="third    circle"><i class="fa-solid fa-circle"></i></span>
+            <span ><i class="fa-regular fa-loader"></i></span>
+
+        </div>
         <header>
             <img id="logo" src="./images/logo/logo.png" alt="logo">
         </header>
 
 
         <main>
-            <section id="accueil">
+            <section >
                 <nav>
                     <form method="post" action="traitement.php">
                       <div id="search">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="search" name="ville" value="Paris,Belleville" id="city">
+                        <i class="fa-solid fa-location-dot"></i><input type="search" name="ville" placeholder="Paris,Belleville" id="city">
                      </div> 
-                        <h3>Réservez le menu qui vous convient</h3>
-                        <h4>Découvrez des restaurants d'exceptions, séléctionnés par nos soins.</h4>
-                        <input type="submit" value="Explorer nos restaurants" class="btn" >
                     </form>
                 </nav>
+                <div id="accueil">
+                    <h3>Réservez le menu qui <br/> vous convient</h3>
+                    <h4>Découvrez des restaurants d'exceptions, <br/> séléctionnés par nos soins.</h4>
+                    <input type="submit" value="Explorer nos restaurants" class="btn" >
+                </div>
             </section>
 
 
-            <section class="section_1">
+            
                 <h3>Fonctionnement</h3>
-                <form>
-                    <ol>
-                        <li><i class="fa-solid fa-mobile-screen-button"></i><input  value="Choississez un restaurant"></li>
-                        <li><i class="fa-solid fa-list-ul"></i><input  value="Composez votre menu"></li>
-                        <li><i class="fa-solid fa-store"></i><input  value="Dégustez au restaurant"></li>
-                    </ol>
-                </form>
+            <section class="section_1">        
+                        <div class="menu"><div class="number">1</div><span class="liste"><i class="fa-solid fa-mobile-screen-button  items"></i>Choisissez un restaurant</span></div>
+                        <div class="menu"><div class="number">2</div><span class="liste"><i class="fa-solid fa-list-ul  items"></i>Composez votre menu</span></div>
+                        <div class="menu"><div class="number">3</div><span class="liste"><i class="fa-solid fa-store   items"></i>Dégustez au restaurant</span></div>
+                   
             </section>
 
-            <section class="section_2">
-                <h3> Restaurants</h3>
-
+            <section class="section_2" >
+                <h3>Restaurants</h3>
+            <block class="block_1">
                 <div class="restau">
                     <a  href="page_1.html" title="La palette du goût" target="_blank">
                         <articles>
-                            <img src="./images/image1.jpg" alt="Restaurant La Palette du goût" >
+                            <div class="new_restau">Nouveau</div>
+                            <img src="./images/image1.jpg" alt="Restaurant La Palette du goût">
                             <div class="adresse">
-                                <h4> La Palette du goût <i class="fill far fa-heart fa-2x"></i></h4>
+                                <h4 class="coeur"> La Palette du goût <i class="fill far fa-heart"></i></h4>
                                 <p>Ménilmontant</p>
                             </div>
-                            
                         </articles>
                     </a>
                </div>
@@ -64,24 +72,28 @@
                <div class="restau">
                     <a  href="page_2.html" title="La note enchantée" target="_blank">
                         <articles>
+                            <div class="new_restau">Nouveau</div>
                             <img src="./images/image2.jpg" alt="Restaurant La note enchantée" >
+                            
                             <div class="adresse">  
-                                <h4 class="coeur"> La note enchantée <i class="fill far fa-heart fa-2x"></i></h4>
+                                <h4 class="coeur"> La note enchantée <i class="fill far fa-heart"></i></h4>
                                 <p>Charonne</p>
                             </div>
                         </articles>
                     </a>
                 </div>
+            </block>
 
+            <block class="block_2">
                 <div class="restau">
                     <a href="page_3.html" title="A la française" target="_blank">
                         <articles>
                             <img src="./images/image3.jpg" alt="Restaurant A la française" >
+                            
                             <div class="adresse">
-                                <h4> A la française <i class="fill far fa-heart fa-2x"></i></h4>
+                                <h4 class="coeur"> A la française <i class="fill far fa-heart"></i></h4>
                                 <p>Cité Rouge</p>
                             </div>
-                           
                         </articles>
                     </a>
                 </div>
@@ -92,13 +104,13 @@
                         <articles>
                             <img src="./images/image4.jpg" alt="Restaurant Le délice des sens" >
                             <div class="adresse">
-                                <h4> Le délice des sens <i class="fill far fa-heart fa-2x"></i></h4>
+                                <h4 class="coeur"> Le délice des sens <i class="fill far fa-heart"></i></h4>
                                 <p>Folie-Méricourt</p>
                             </div>
-            
                         </articles>
                     </a>
                 </div>
+            </block>
             </section>
         </main>
     
@@ -106,10 +118,10 @@
             <h3>ohmyfood</h3>
             
     <ul>
-        <i class="fa-solid fa-utensils"></i><li>Proposer un restaurant</li>
-        <i class="fa-solid fa-handshake-angle"></i><li>Devenir partenaire</li>
-        <li>Mentions légales</li>
-        <li>Contact</li>
+        <li><i class="fa-solid fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+        <li><i class="fa-solid fa-handshake-angle"></i><a href="#">Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:#">Contact</a></li>
     </ul>
         </footer>
     </body>

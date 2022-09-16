@@ -1,0 +1,86 @@
+@import "./base/body.scss";
+@import "./base/main_restau.scss";
+@import "./composants/boutton.scss";
+@import "./composants/heart.scss";
+@import "./layout/header.scss";
+@import "./utils/variables";
+@import "./utils/mixins_restau";
+@import "./utils/animation";
+@import "./layout/footer.scss";
+@import "./base/main_restau.scss";
+
+
+header{
+  i{
+    @include fleche_retour;
+  }
+}
+
+#banniere{
+    @include banniere;
+    background-image: url(/images/image3.jpg);
+    }
+
+.titre{
+  @include titre;
+}
+
+h2{
+@include h2;
+}
+
+.fill{
+  @include heart;
+}
+
+h3{
+@include h3;
+}
+
+
+.choix{
+@include choix; 
+@include animation_menu;
+    .fa-circle-check{
+      @include check;
+    }
+    &:hover .fa-circle-check{
+      margin-right: -10px;
+      margin-left: 10px;
+      transition: margin-right 0.7s;
+      &:hover .fa-solid{
+        animation-name: all 2s;
+      }
+     }
+}
+
+h4{
+margin-top: 12px;
+margin-bottom: 5px;
+text-overflow: ellipsis !important;
+flex-wrap: nowrap !important;
+overflow: hidden !important;
+white-space: pre !important;
+}
+
+.presentation{
+@include presentation;
+}
+  
+.prix{
+font-weight: bold;
+float: right;
+margin-right: 0;
+}
+
+form{
+@include centre_btn;
+  .btn{
+    @include btn;
+  }
+}
+
+
+
+
+

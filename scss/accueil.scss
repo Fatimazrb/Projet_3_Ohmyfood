@@ -1,111 +1,155 @@
-@media all and (max-width: 768px) {
-
-@import "./base/fondation.scss";
+@import "./base/body.scss";
 @import "./composants/boutton.scss";
-@import "./layout/footer.scss";
+@import "./composants/heart.scss";
 @import "./layout/header.scss";
 @import "./utils/variables";
-@import "./utils/mixins";
-@import "./utils/fonctions";
-@import "./utils/placesholders";
-@import "./utils/responsive";
+@import "./utils/mixins.accueil";
+@import "./utils/animation";
+@import "./layout/footer.scss";
+@import "./composants/loading.scss";
 
-
-nav {
-  width: 100%;
-  height: 250px;
-  background-color: $background-grey;
-  margin-top: 10px;
-  text-align: center;
-  justify-content: center;
-  
-    h4{
-      font-weight: normal;
-       } 
-}
 
 #search{
-  width: 100%;
-  height: 30px;
-  background-color: rgba(188, 175, 175, 0.194);
-  padding: 5px;
-  border: 1px inset;
-  border-left: none;
-  border-right: none;
-  display: flex;
-  justify-content: center;
-  padding-left: 50px;
+height: 30px;
+padding: 10px;
+background-color: $background-grey;
+border: 2px inset;
+border-left: none;
+border-right: none;
+display: flex;
+justify-content: center;
 }
 
 .fa-location-dot{
-  font-size: 15px;
-  margin-top: 5px;
+font-size: 12px;
+margin-top: 10px;
+margin-left: 40px;
 }
-
+  
 #city{
 border: none;
 background-color: transparent;
 margin-left: 15px;
-}
+  /* Fin de la zone de recherche */
+} 
 
+#accueil {  /*Texte présentation avec le boutton de clique */
+height: 230px;
+padding: 10px;
+background-color: #f2f2f28e;
+text-align: center;
+justify-content: center;
+  h4{
+  font-weight: normal;
+   } 
+   h3{  /*  Texte dans boutton */
+    width: 100%;
+    font-size: 20px;
+  }
+}
+  
 .btn{
- @include btn;
+@include btn;
+   /* Fin du block présentation et boutton */
+} 
+
+.section_1{   /* Début section 1 partie avec la liste */
+display: flex;
+flex-direction: column;
+padding: 10px;
+@include menu_accueil;
 }
 
+.liste{
+@include liste;
+}
+
+.menu{
+display: flex;
+justify-content: center;
+}
+
+.items{   /* petit icone */
+color: grey;
+margin-right: 25px;
+}  
+
+.number{
+@include number;
+}
+
+.liste{
+ @include liste;
+ /* Fin de la liste */
+}
+ 
 h3{
-  margin-left: 15px;
-  font-size: 20px;
+  margin-left: 20px;
 }
-  
-.section_1{
-  display: flex;
-  flex-direction: column;
 
-  i{
-    color: grey;
-  }
-  
-  .liste{
-    @include li;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 20px;
-    box-shadow: 3px 3px 3px 1px lightgray;
-    list-style-position: outside;
-  }
 
-    input{
-      @include li;
-      font-weight: bold;
-      margin-left: 20px;
+.section_2 {   /* Début de la partie 2 avec les restaurants proposés */
+background-color: $background-grey;
+display: flex;
+flex-direction: column;
+padding: 10px;
+margin-top: 20px;
+} 
+  
+.block_1{
+  @media screen and (min-width:992px) {
+    display: flex;
+  }
+}
+
+.block_2{
+  @media screen and (min-width:992px) {
+    display: flex;
+  }
+}
+
+.restau{  
+  @include restau;  /* Block image avec nom restaurant */
+  @media screen and (min-width:768px) {
+    width: 60%;
+  }
+}
+
+a{
+text-decoration: none;
+color: black;  
+  .adresse{
+  margin-top: -10px;
+  margin-left: 10px;
+  margin-right: 20px;
+    p{
+    margin-top: -20px;
+    font-size: 13px;
     }
-}
-
-.section_2 {
-  
-  background-color: $background-grey;
-  width: 100%;
-  
-  .restau{
-  width: 80%;
-  height: 400px;
-  box-shadow: 5px 5px 5px 1px $background-grey;
-  border-radius: 20px;
-  justify-content: center;
-  text-decoration: none;
-  color: black;
-  background-color: white;
-}
-  img{
-    width: 90%;
-    height: 90px;
-    padding: 5px;
   }
 }
 
+.coeur{  /* Groupe Coeur de remplissage pour favori avec le nom du restaurant */
+display: flex;
+justify-content: space-between;
 }
 
+.new_restau{   
+font-size: 12px;
+border: none;
+border-radius: 2px;
+width:20%;
+padding:5px;
+text-align: center;
+background-color: $color-tertiary;
+color: green;
+font-weight: bold;
+position: absolute;
+right: 10px;
+margin-top: 15px;
+   /* Fin section 2 */
+}
 
-
+.fill{
+  @include favori;
+}

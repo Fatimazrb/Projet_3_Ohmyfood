@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./pages/accueil.scss:.css/accueil.css ./pages/page_1.scss:.css/page_1.css   ./pages/page_2.scss:.css/page_2.css    ./pages/page_3.scss:.css/page_3.css ./pages/page_4.scss:.css/page_4.css --style expanded "
+    "sass": "sass --watch ./scss/accueil.scss:.css/accueil.css ./scss/page_1.scss:.css/page_1.css   ./scss/page_2.scss:.css/page_2.css    ./scss/page_3.scss:.css/page_3.css ./scss/page_4.scss:.css/page_4.css --style expanded "
   },
   "repository": {
     "type": "git",

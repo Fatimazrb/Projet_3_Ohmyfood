@@ -1,7 +1,32 @@
 footer{
-    background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.74);
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0;
+  h3{
+    font-family: "shrikhand";
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: -5px;
+    margin-left: 25px;
+    border-bottom: none;
+  }
+    i{
+      margin-right: 5px;
+      font-size: 10px;
+    }
+      li{
+        list-style: none;
+        font-size: 13px;
+        margin-bottom: 5px;
+        margin-left: -15px;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+      }
   }

@@ -1,0 +1,65 @@
+@keyframes all{
+    0%{
+        transform: translate(-50px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes menu{ /* animation des choix des plats sur la page de restaurants */
+    from{
+      transform: TranslateY(50%);
+      opacity: 0;
+    }
+    to{
+      transform: TranslateY(0);
+      opacity: 1;
+    }
+  }
+
+@mixin animation_menu{ /* animation des choix des plats sur la page de restaurants */
+    @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+            animation-delay: 100ms*$i;
+        }
+    }
+
+    animation-duration: 1s;
+    animation-name: menu;    
+}
+
+
+
+
+
+@keyframes char{ /* animation chargement de la page  accueil */
+    to{
+        transform: scale(0);
+    }
+}
+
+
+
+
+@keyframes touch{ /* animation des 3 cercles sur l'accueil */
+    from{
+      transform: TranslateY(50%);
+      opacity: 0;
+    }
+    to{
+      transform: TranslateY(0);
+      opacity: 1;
+    }
+  }
+
+@mixin animation_touch{ /* aniamtion des 3 cercles */
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+            animation-delay: 300ms * $i;
+        }
+    }
+    animation-duration: 1s;
+    animation-name: touch;    
+}
+
