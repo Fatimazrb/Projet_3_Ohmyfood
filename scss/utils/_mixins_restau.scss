@@ -32,6 +32,16 @@ font-weight: normal;
 padding: 15px;
 }
 
+@mixin card{
+  @media screen and (min-width:900px) {
+    width: 30%;
+  }
+  @media screen and (min-width:768px) and (max-width:900px){
+    width: 50%;
+  }
+  width: 100%;
+}
+
 @mixin h3{
 border: 3px solid #99E2D0 ;
 border-top: none;
@@ -45,17 +55,26 @@ margin-top: 30px;
 font-size: 17px;
 }
 
+@mixin h4{
+  margin-top: 12px;
+  margin-bottom: 5px;
+  text-overflow: ellipsis !important;
+  flex-wrap: nowrap !important;
+  overflow: hidden !important;
+  white-space: pre !important;
+}
+
 @mixin choix{ /* bulle de chaque plats */
-  @media screen and (min-width:992px) {
+  @media screen and (min-width:900px) {
     width: 85%;
     margin: 15px;
   }
-  @media screen and (min-width:768) and (max-width:992px) {
-    min-width: 90%;
+  @media screen and (min-width:768) and (max-width:900px) {
+    width: 90%;
   }
   
 margin: 15px;
-width: 80%;
+width: 90%;
 max-height: 65px;
 position: relative;
 cursor: pointer;
@@ -68,10 +87,13 @@ margin-bottom: 10px;
 padding-left: 10px;
 padding-right: 10px;
 justify-content:center;
+  &:hover .check{
+  opacity: 1;
+  transform: translate(-50px);
 }
-
-.bulle{
-  display: flex;
+    &:hover .fa-circle-check {
+      transform: rotate(360deg);
+    }
 }
 
 @mixin presentation{ /* détail du plat */
@@ -81,21 +103,30 @@ overflow: hidden !important;
 white-space: pre !important;
 }
 
-@mixin check{ 
-  @media all and (max-width:768px){
-    width: 20%;
-  }
-float: right;
-color: white;
-background: $color-tertiary;
-height: 65px;
-width: 15%;
-font-size: 20px;
-border-radius: 0 15px 15px 0;
-display: flex;
-align-items: center;
-justify-content:center;
- /* margin-right: -171px */
+@mixin price{
+    float: right;
+    width: 30px;
+    height: 50px;
 }
 
+@mixin check{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-tertiary;
+  width: 15%;
+  height: 62px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 5px;
+  right: -51px;
+  top: 0px;
+  opacity: 0;
+  transition: transform 330ms ease-in-out;
+}
 
+@mixin fa-circle-check {
+  color: #fff;
+  transition: transform 500ms ease-in-out;
+}
