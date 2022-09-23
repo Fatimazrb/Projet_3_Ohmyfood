@@ -56,8 +56,12 @@ justify-content: center;
 .section_1{   /* Début section 1 partie avec la liste */
 display: flex;
 flex-direction: column;
-padding: 10px;
+padding: 20px;
 @include menu_accueil;
+}
+
+.titre_section_1{
+  margin-left: 10px;
 }
 
 .liste{
@@ -67,11 +71,14 @@ padding: 10px;
 .menu{
 display: flex;
 justify-content: center;
+@media screen and (min-width:798px){
+  width: 40%;
+}
 }
 
 .items{   /* petit icone */
 color: grey;
-margin-right: 25px;
+margin-right: 20px;
 }  
 
 .number{
@@ -83,10 +90,6 @@ margin-right: 25px;
  /* Fin de la liste */
 }
  
-h3{
-  margin-left: 20px;
-}
-
 
 .section_2 {   /* Début de la partie 2 avec les restaurants proposés */
 background-color: $background-grey;
