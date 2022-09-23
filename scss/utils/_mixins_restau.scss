@@ -91,14 +91,19 @@ justify-content:center;
         transform: translate(-70px);                                                                                    
         transition: transform 550ms;
       }    
+      &:hover .ellipsis{
+        max-width:210px;
+      }
 }
 
-@mixin presentation{ /* détail du plat */
+
+@mixin presentation{ /* accompagnement */
 text-overflow: ellipsis !important;
 overflow: hidden !important;
-white-space: nowrap;
+white-space: nowrap !important;
 max-width: 85%;
 }
+
 
 @mixin price{
   display: block;
