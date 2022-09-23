@@ -37,37 +37,30 @@ h3{
 @include h3;
 }
 
+.card{
+  @include card;
+}
 
 .choix{
 @include choix; 
 @include animation_menu;
-    .fa-circle-check{
-      @include check;
+  .prix{
+    @include price;
+  }
+  .check{
+    @include check;
     }
-    &:hover .fa-circle-check{
-      margin-right: -10px;
-      margin-left: 10px;
-      transition: margin-right 0.7s;
-     }
+  .fa-circle-check{
+    @include fa-circle-check;
+  }
+}
+
+.ellipsis{
+  @include presentation;
 }
 
 h4{
-margin-top: 12px;
-margin-bottom: 5px;
-text-overflow: ellipsis !important;
-flex-wrap: nowrap !important;
-overflow: hidden !important;
-white-space: pre !important;
-}
-
-.presentation{
-@include presentation;
-}
-  
-.prix{
-font-weight: bold;
-float: right;
-margin-right: 0;
+@include h4;
 }
 
 form{
@@ -76,5 +69,3 @@ form{
     @include btn;
   }
 }
-
-
