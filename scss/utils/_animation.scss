@@ -1,11 +1,3 @@
-@keyframes all{
-    0%{
-        transform: translate(-50px);
-    }
-    100%{
-        transform: translate(0);
-    }
-}
 
 @keyframes menu{ /* animation des choix des plats sur la page de restaurants */
     from{
@@ -61,5 +53,17 @@
     }
     animation-duration: 1s;
     animation-name: touch;    
+}
+
+@keyframes all {
+  0%{
+    transform: Scale(0);
+    opacity: 0;
+  }
+
+  100%{
+    transform: Scale(1);
+    opacity: 1;
+  }
 }
 
