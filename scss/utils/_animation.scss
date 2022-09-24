@@ -17,7 +17,7 @@
         }
     }
 
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: menu;    
 }
 
@@ -55,14 +55,14 @@
     animation-name: touch;    
 }
 
-@keyframes all {
+@keyframes fill {
   0%{
-    transform: Scale(0);
+    transform: Scale(0.9);
     opacity: 0;
   }
 
   100%{
-    transform: Scale(1);
+    transform: Scale(1.1);
     opacity: 1;
   }
 }
