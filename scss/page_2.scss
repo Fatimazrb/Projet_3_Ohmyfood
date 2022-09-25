@@ -37,4 +37,35 @@ h3{
 @include h3;
 }
 
+.card{
+  @include card;
+}
 
+.choix{
+@include choix; 
+@include animation_menu;
+  .prix{
+    @include price;
+  }
+  .check{
+    @include check;
+    }
+  .fa-circle-check{
+    @include fa-circle-check;
+  }
+}
+
+.ellipsis{
+  @include presentation;
+}
+
+h4{
+@include h4;
+}
+
+form{
+@include centre_btn;
+  .btn{
+    @include btn;
+  }
+}
