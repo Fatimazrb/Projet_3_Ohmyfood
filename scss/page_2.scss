@@ -41,6 +41,18 @@ h3{
   @include card;
 }
 
+.card_2{
+  @media screen and (min-width:768px){
+    margin-top: -70px
+  }
+}
+
+.card_3{
+  @media screen and (min-width:901px){
+    margin-top: -70px
+  }
+}
+
 .choix{
 @include choix; 
 @include animation_menu;

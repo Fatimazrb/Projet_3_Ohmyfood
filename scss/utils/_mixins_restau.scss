@@ -32,7 +32,7 @@ font-weight: normal;
 padding: 15px;
 }
 
-@mixin card{
+@mixin card{ /* différente section du menu */
   @media screen and (min-width:900px) {
     width: 30%;
   }
@@ -65,7 +65,7 @@ font-size: 17px;
     width: 85%;
     margin: 15px;
   }
-  @media screen and (min-width:768) and (max-width:900px) {
+  @media screen and (min-width:768px) and (max-width:900px) {
     width: 90%;
   } 
 margin: 15px;
