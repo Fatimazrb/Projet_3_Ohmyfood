@@ -2,7 +2,7 @@
   "name": "ohmyfood",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./scss/index.scss:.css/index.css ./scss/page_1.scss:.css/page_1.css   ./scss/page_2.scss:.css/page_2.css    ./scss/page_3.scss:.css/page_3.css ./scss/page_4.scss:.css/page_4.css --style expanded ",
     "prefix": "postcss ./.css/accueil.css ./.css/page_1.css   ./.css/page_2.css    ./.css/page_3.css ./.css/page_4.css --use autoprefixer   -d ./.css/prefixed/"
