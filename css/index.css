@@ -20,7 +20,8 @@ header #logo {
   padding: 10px;
 }
 
-@keyframes menu { /* animation des choix des plats sur la page de restaurants */
+@keyframes menu {
+  /* animation des choix des plats sur la page de restaurants */
   from {
     transform: TranslateY(50%);
     opacity: 0;
@@ -30,12 +31,14 @@ header #logo {
     opacity: 1;
   }
 }
-@keyframes char { /* animation chargement de la page  accueil */
+@keyframes char {
+  /* animation chargement de la page  accueil */
   to {
     transform: scale(0);
   }
 }
-@keyframes touch { /* animation cercle */
+@keyframes touch {
+  /* animation cercle */
   0% {
     transform: rotate(0deg);
   }
@@ -109,7 +112,7 @@ footer a {
 .loader h2 {
   position: relative;
   z-index: 2;
-  color: #99E2D0;
+  color: #99e2d0;
   opacity: 0.5;
   font-size: 20px;
   font-weight: normal;
@@ -133,7 +136,7 @@ footer a {
   padding: 20px;
   height: 300px;
   width: 300px;
-  background-image: conic-gradient(transparent, transparent, transparent, #9356DC);
+  background-image: conic-gradient(transparent, transparent, transparent, #9356dc);
   animation: touch 4s linear infinite;
 }
 .loader .loader_mini::after {
@@ -143,7 +146,7 @@ footer a {
   padding: 20px;
   height: 300px;
   width: 300px;
-  background-image: conic-gradient(transparent, transparent, transparent, #FF79DA);
+  background-image: conic-gradient(transparent, transparent, transparent, #ff79da);
   animation: touch 4s linear infinite;
   animation-delay: -2s;
 }
@@ -172,7 +175,8 @@ footer a {
   /* Fin de la zone de recherche */
 }
 
-#accueil { /*Texte présentation avec le boutton de clique */
+#accueil {
+  /*Texte présentation avec le boutton de clique */
   height: 230px;
   padding: 10px;
   background-color: rgba(242, 242, 242, 0.5568627451);
@@ -182,7 +186,8 @@ footer a {
 #accueil h4 {
   font-weight: normal;
 }
-#accueil h3 { /*  Texte dans boutton */
+#accueil h3 {
+  /*  Texte dans boutton */
   width: 100%;
   font-size: 20px;
 }
@@ -195,7 +200,7 @@ footer a {
   color: white;
   border: none;
   position: relative;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   cursor: pointer;
   /* Fin du block présentation et boutton */
 }
@@ -210,7 +215,8 @@ footer a {
   transition-duration: 550ms;
 }
 
-.section_1 { /* Début section 1 partie avec la liste */
+.section_1 {
+  /* Début section 1 partie avec la liste */
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -254,7 +260,7 @@ footer a {
   cursor: pointer;
 }
 .liste:hover:hover .items {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .menu {
@@ -267,13 +273,14 @@ footer a {
   }
 }
 
-.items { /* petit icone */
+.items {
+  /* petit icone */
   color: grey;
   margin-right: 20px;
 }
 
 .number {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   width: 10px;
   height: 10px;
@@ -312,10 +319,11 @@ footer a {
   cursor: pointer;
 }
 .liste:hover:hover .items {
-  color: #9356DC;
+  color: #9356dc;
 }
 
-.section_2 { /* Début de la partie 2 avec les restaurants proposés */
+.section_2 {
+  /* Début de la partie 2 avec les restaurants proposés */
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -386,7 +394,7 @@ a .adresse p {
   width: 20%;
   padding: 5px;
   text-align: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: green;
   font-weight: bold;
   position: absolute;

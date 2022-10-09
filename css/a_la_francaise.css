@@ -36,7 +36,8 @@ header #logo {
   padding: 10px;
 }
 
-@keyframes menu { /* animation des choix des plats sur la page de restaurants */
+@keyframes menu {
+  /* animation des choix des plats sur la page de restaurants */
   from {
     transform: TranslateY(50%);
     opacity: 0;
@@ -46,12 +47,14 @@ header #logo {
     opacity: 1;
   }
 }
-@keyframes char { /* animation chargement de la page  accueil */
+@keyframes char {
+  /* animation chargement de la page  accueil */
   to {
     transform: scale(0);
   }
 }
-@keyframes touch { /* animation cercle */
+@keyframes touch {
+  /* animation cercle */
   0% {
     transform: rotate(0deg);
   }
@@ -150,13 +153,23 @@ h2 {
 
 .fill {
   /* coeur à côté du titre */
-  margin-top: 42px;
   margin-right: 20px;
+  float: right;
+  margin-top: 43px;
   font-size: 20px;
+  cursor: pointer;
+}
+.fill:hover {
+  animation: fill 1s cubic-bezier(0, 2, 1, -1.12);
+  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
 }
 
 h3 {
-  border: 3px solid #99E2D0;
+  border: 3px solid #99e2d0;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -268,7 +281,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   width: 15%;
   height: 60px;
   border-top-right-radius: 15px;
@@ -314,7 +327,7 @@ form .btn {
   color: white;
   border: none;
   position: relative;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   cursor: pointer;
 }
 @media screen and (min-width: 768px) {
@@ -328,4 +341,4 @@ form .btn:hover {
   transition-duration: 550ms;
 }
 
-/*# sourceMappingURL=page_3.css.map */
+/*# sourceMappingURL=a_la_francaise.css.map */
