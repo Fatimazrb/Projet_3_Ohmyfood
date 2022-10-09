@@ -1,65 +1,71 @@
-
-.loader{
+.loader {
+  background-color: white;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.9;
+  transform-origin: center;
+  height: 100%;
+  animation: char 3s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    position: absolute;
+    inset: 5px;
+    border-radius: 95px;
     background-color: white;
-    position: fixed;
-    inset: 0;
     z-index: 1;
-    opacity: 0.9;
-    transform-origin: center;
-    height: 100%;
-    animation: char 3s forwards;
+  }
+  h2 {
+    position: relative;
+    z-index: 2;
+    color: $color-tertiary;
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .loader_mini {
+    position: relative;
+    font-family: "shrikhand";
+    border-radius: 100px;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    span{
-        position: absolute;
-        inset: 5px;
-        border-radius: 95px;
-        background-color: white;
-        z-index: 1;
+    justify-content: center;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 100px;
+      padding: 20px;
+      height: 300px;
+      width: 300px;
+      background-image: conic-gradient(
+        transparent,
+        transparent,
+        transparent,
+        $color-primary
+      );
+      animation: touch 4s linear infinite;
     }
-    h2{
-        position: relative;
-        z-index: 2;
-        color: $color-tertiary;
-        opacity: 0.5;
-        font-size: 20px;
-        font-weight: normal;
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 100px;
+      padding: 20px;
+      height: 300px;
+      width: 300px;
+      background-image: conic-gradient(
+        transparent,
+        transparent,
+        transparent,
+        $color-secondary
+      );
+      animation: touch 4s linear infinite;
+      animation-delay: -2s;
     }
-    .loader_mini{
-        position: relative;
-        font-family: "shrikhand";
-        border-radius: 100px;
-        padding: 20px;
-        height: 100px;
-        width: 100px;
-        display:flex;
-        align-items: center; 
-        justify-content: center;
-        overflow: hidden;
-        &::before{
-            content: "";
-            position: absolute;
-            border-radius: 100px;
-            padding: 20px;
-            height: 300px;
-            width: 300px;
-            background-image: conic-gradient(transparent,transparent,transparent,$color-primary);
-            animation: touch 4s linear infinite;
-        }
-        &::after{
-            content: "";
-            position: absolute;
-            border-radius: 100px;
-            padding: 20px;
-            height: 300px;
-            width: 300px;
-            background-image: conic-gradient(transparent,transparent,transparent,$color-secondary);
-            animation: touch 4s linear infinite;
-            animation-delay: -2s;
-        }
-    }
-    }
-
-
-    
+  }
+}

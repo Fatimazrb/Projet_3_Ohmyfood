@@ -1,15 +1,14 @@
-header{
-    margin: 0;
-    height: 30px;
+header {
+  margin: 0;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+  #logo {
+    max-width: 30%;
+    margin: auto;
+    max-height: 20px;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
-    text-align: center;
-    #logo{
-        max-width: 30%;
-        margin: auto;
-        max-height: 20px;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-      }
+  }
 }
-

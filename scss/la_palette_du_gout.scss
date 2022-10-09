@@ -9,63 +9,62 @@
 @import "./layout/footer.scss";
 @import "./base/main_restau.scss";
 
-
-header{
-  i{
+header {
+  i {
     @include fleche_retour;
   }
 }
 
-#banniere{
-    @include banniere;
-    background-image: url(/images/image1.jpg);
-    }
+#banniere {
+  @include banniere;
+  background-image: url(/images/image1.jpg);
+}
 
-.titre{
+.titre {
   @include titre;
 }
 
-h2{
-@include h2;
+h2 {
+  @include h2;
 }
 
-.fill{
+.fill {
   @include heart;
 }
 
-h3{
-@include h3;
+h3 {
+  @include h3;
 }
 
-.card{
+.card {
   @include card;
 }
 
-.choix{
-@include choix; 
-@include animation_menu;
-  .prix{
+.choix {
+  @include choix;
+  @include animation_menu;
+  .prix {
     @include price;
   }
-  .check{
+  .check {
     @include check;
-    }
-  .fa-circle-check{
+  }
+  .fa-circle-check {
     @include fa-circle-check;
   }
 }
 
-.ellipsis{
+.ellipsis {
   @include presentation;
 }
 
-h4{
-@include h4;
+h4 {
+  @include h4;
 }
 
-form{
-@include centre_btn;
-  .btn{
+form {
+  @include centre_btn;
+  .btn {
     @include btn;
   }
 }

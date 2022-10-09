@@ -1,17 +1,30 @@
-@mixin favori{
-  float:right;
+@mixin favori {
+  float: right;
   margin-top: -45px;
   margin-right: 20px;
   font-size: 20px;
   cursor: pointer;
-    &:active {
-        opacity: 1;
-        animation:  fill 2s cubic-bezier(0,2,1,-1.12);
-        background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-        background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        font-weight: bold;
-      }
+  &:active {
+    opacity: 1;
+    animation: fill 2s cubic-bezier(0, 2, 1, -1.12);
+    background: linear-gradient(
+      to left,
+      #9356dc,
+      #b35cdc,
+      #cf64dc,
+      #e86edb,
+      #ff79da
+    );
+    background: -webkit-linear-gradient(
+      to left,
+      #9356dc,
+      #b35cdc,
+      #cf64dc,
+      #e86edb,
+      #ff79da
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+  }
 }
-

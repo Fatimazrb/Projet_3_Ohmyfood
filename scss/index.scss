@@ -8,146 +8,149 @@
 @import "./layout/footer.scss";
 @import "./composants/loading.scss";
 
-
-#search{
-height: 30px;
-padding: 10px;
-background-color: $background-grey;
-border: 2px inset;
-border-left: none;
-border-right: none;
-display: flex;
-justify-content: center;
+#search {
+  height: 30px;
+  padding: 10px;
+  background-color: $background-grey;
+  border: 2px inset;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  justify-content: center;
 }
 
-.fa-location-dot{
-font-size: 12px;
-margin-top: 10px;
-margin-left: 40px;
+.fa-location-dot {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 40px;
 }
-  
-#city{
-border: none;
-background-color: transparent;
-margin-left: 15px;
+
+#city {
+  border: none;
+  background-color: transparent;
+  margin-left: 15px;
   /* Fin de la zone de recherche */
-} 
+}
 
-#accueil {  /*Texte présentation avec le boutton de clique */
-height: 230px;
-padding: 10px;
-background-color: #f2f2f28e;
-text-align: center;
-justify-content: center;
-  h4{
-  font-weight: normal;
-   } 
-   h3{  /*  Texte dans boutton */
+#accueil {
+  /*Texte présentation avec le boutton de clique */
+  height: 230px;
+  padding: 10px;
+  background-color: #f2f2f28e;
+  text-align: center;
+  justify-content: center;
+  h4 {
+    font-weight: normal;
+  }
+  h3 {
+    /*  Texte dans boutton */
     width: 100%;
     font-size: 20px;
   }
 }
-  
-.btn{
-@include btn;
-   /* Fin du block présentation et boutton */
-} 
 
-.section_1{   /* Début section 1 partie avec la liste */
-display: flex;
-flex-direction: column;
-padding: 20px;
-@include menu_accueil;
+.btn {
+  @include btn;
+  /* Fin du block présentation et boutton */
 }
 
-.titre_section_1{
+.section_1 {
+  /* Début section 1 partie avec la liste */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  @include menu_accueil;
+}
+
+.titre_section_1 {
   margin-left: 10px;
 }
 
-.liste{
-@include liste;
+.liste {
+  @include liste;
 }
 
-.menu{
-display: flex;
-justify-content: center;
-@media screen and (min-width:798px){
-  width: 40%;
-}
-}
-
-.items{   /* petit icone */
-color: grey;
-margin-right: 20px;
-}  
-
-.number{
-@include number;
+.menu {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 798px) {
+    width: 40%;
+  }
 }
 
-.liste{
- @include liste;
- /* Fin de la liste */
+.items {
+  /* petit icone */
+  color: grey;
+  margin-right: 20px;
 }
- 
 
-.section_2 {   /* Début de la partie 2 avec les restaurants proposés */
-background-color: $background-grey;
-display: flex;
-flex-direction: column;
-padding: 10px;
-margin-top: 20px;
-} 
-  
-.block_1{
-  @media screen and (min-width:992px) {
+.number {
+  @include number;
+}
+
+.liste {
+  @include liste;
+  /* Fin de la liste */
+}
+
+.section_2 {
+  /* Début de la partie 2 avec les restaurants proposés */
+  background-color: $background-grey;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.block_1 {
+  @media screen and (min-width: 992px) {
     display: flex;
   }
 }
 
-.block_2{
-  @media screen and (min-width:992px) {
+.block_2 {
+  @media screen and (min-width: 992px) {
     display: flex;
   }
 }
 
-.restau{  
-  @include restau;  /* Block image avec nom restaurant */
-  @media screen and (min-width:768px) {
+.restau {
+  @include restau; /* Block image avec nom restaurant */
+  @media screen and (min-width: 768px) {
     width: 60%;
   }
 }
 
-a{
-text-decoration: none;
-color: black;  
-  .adresse{
-  margin-top: -10px;
-  margin-left: 10px;
-  margin-right: 20px;
-    p{
-    margin-top: -20px;
-    font-size: 13px;
+a {
+  text-decoration: none;
+  color: black;
+  .adresse {
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    p {
+      margin-top: -20px;
+      font-size: 13px;
     }
   }
 }
 
-.new_restau{   
-font-size: 12px;
-border: none;
-border-radius: 2px;
-width:20%;
-padding:5px;
-text-align: center;
-background-color: $color-tertiary;
-color: green;
-font-weight: bold;
-position: absolute;
-right: 10px;
-margin-top: 15px;
-   /* Fin section 2 */
+.new_restau {
+  font-size: 12px;
+  border: none;
+  border-radius: 2px;
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  background-color: $color-tertiary;
+  color: green;
+  font-weight: bold;
+  position: absolute;
+  right: 10px;
+  margin-top: 15px;
+  /* Fin section 2 */
 }
 
-.fill{
+.fill {
   @include favori;
 }

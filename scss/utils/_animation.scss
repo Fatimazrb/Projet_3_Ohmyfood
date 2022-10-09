@@ -1,61 +1,52 @@
-
-@keyframes menu{ /* animation des choix des plats sur la page de restaurants */
-    from{
-      transform: TranslateY(50%);
-      opacity: 0;
-    }
-    to{
-      transform: TranslateY(0);
-      opacity: 1;
-    }
-  }
-
-@mixin animation_menu{ /* animation des choix des plats sur la page de restaurants */
-    @for $i from 1 through 10 {
-        &:nth-child(#{$i}) {
-            animation-delay: 100ms*$i;
-        }
-    }
-
-    animation-duration: 2s;
-    animation-name: menu;    
-}
-
-
-
-
-
-@keyframes char{ /* animation chargement de la page  accueil */
-    to{
-        transform: scale(0);
-    }
-}
-
-
-
-
-@keyframes touch{ /* animation cercle */
-    0%{
-      transform: rotate(0deg);
-    }
-    100%{
-      transform: rotate(360deg);
-    }
-  }
-
-
-
-  
-
-@keyframes fill {
-  0%{
-    transform: Scale(0.9);
+@keyframes menu {
+  /* animation des choix des plats sur la page de restaurants */
+  from {
+    transform: TranslateY(50%);
     opacity: 0;
   }
-
-  100%{
-    transform: Scale(1.3);
+  to {
+    transform: TranslateY(0);
     opacity: 1;
   }
 }
 
+@mixin animation_menu {
+  /* animation des choix des plats sur la page de restaurants */
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
+    }
+  }
+
+  animation-duration: 2s;
+  animation-name: menu;
+}
+
+@keyframes char {
+  /* animation chargement de la page  accueil */
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes touch {
+  /* animation cercle */
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fill {
+  0% {
+    transform: Scale(0.9);
+    opacity: 0;
+  }
+
+  100% {
+    transform: Scale(1.3);
+    opacity: 1;
+  }
+}
